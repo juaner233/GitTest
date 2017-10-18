@@ -8,39 +8,49 @@
 
 <script type="text/javascript">
     var array = [1, 2, 3, 4];
-//第一个函数
-    function forEach1(fn) {
+////第一个函数
+//    function forEach1(fn) {
+//        for (var i = 0; i < array.length; i++) {
+//            var value = array[i];
+//            var index = i;
+//            fn(value, index, array);
+//        }
+//    }
+//    forEach1(function (value, index, myarr) {
+//        console.log(value, index, myarr);
+//    });
+////第二个函数
+//    function map1(fn) {
+//        for (var i = 0; i < array.length; i++) {
+//            var value = array[i];
+//            array[i] = fn(value);
+//        }
+//        console.log(array);
+//    }
+//    map1(function (value) {
+//        return value * value;
+//    })
+////    第三个函数
+//    function indexOf(search,star) {
+//        for (var i = star; i < array.length; i++) {
+//            var value = array[i];
+////            console.log(value);
+//            if (search == value){
+//                return console.log(i);
+//            }
+//        }
+//    }
+//    indexOf(4,0);
+//    第四个函数
+    function every1(fn) {
         for (var i = 0; i < array.length; i++) {
             var value = array[i];
-            var index = i;
-            fn(value, index, array);
+            console.log(fn(value));
         }
     }
-    forEach1(function (value, index, myarr) {
-        console.log(value, index, myarr);
-    });
-//第二个函数
-    function map1(fn) {
-        for (var i = 0; i < array.length; i++) {
-            var value = array[i];
-            array[i] = fn(value);
-        }
-        console.log(array);
-    }
-    map1(function (value) {
-        return value * value;
+    every1(function (value) {
+        return value > 9;
     })
-//    第三个函数
-    function indexOf(search,star) {
-        for (var i = star; i < array.length; i++) {
-            var value = array[i];
-//            console.log(value);
-            if (search == value){
-                return console.log(i);
-            }
-        }
-    }
-    indexOf(4,0);
 
 </script>
 </body>
