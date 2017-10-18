@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    var array = [1, 2, 3, 4];
+//第一个函数
+    function forEach1(fn) {
+        for (var i = 0; i < array.length; i++) {
+            var value = array[i];
+            var index = i;
+            fn(value, index, array);
+        }
+    }
+    forEach1(function (value, index, myarr) {
+        console.log(value, index, myarr);
+    });
+
+</script>
+</body>
+</html>
