@@ -30,6 +30,18 @@
     map1(function (value) {
         return value * value;
     })
+//    第三个函数
+    function indexOf(search,star) {
+        for (var i = star; i < array.length; i++) {
+            var value = array[i];
+//            console.log(value);
+            if (search == value){
+                return console.log(i);
+            }
+        }
+    }
+    indexOf(4,0);
+
 </script>
 </body>
 </html>
